@@ -1,0 +1,91 @@
+/*globales*/
+html {
+    font-size: 62.5%;
+    box-sizing: border-box;
+}
+*  {
+    box-sizing: inherit;
+}
+*:before {
+    box-sizing: inherit;
+}
+*:after {
+    box-sizing: inherit;
+}
+body {
+    font-size: 1.6rem;
+    margin: 4rem 7rem;
+}
+p {
+    font-size: 2rem;
+}
+.contenedor {
+    width: 95%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+a {
+    text-decoration: none;
+}
+
+img {
+    max-width: 90%;
+    min-width: 40rem;
+}
+
+h1, h2, h3 {
+    margin: 0 0 2.5rem 0 ;
+    font-weight: 900;
+    color: negro;
+}
+
+h1 {
+    font-size: 5rem;
+}
+h2 {
+    font-size: 3.6rem;
+}
+h3 {
+    font-size: 3rem;
+}
+
+
+@media (min-width: 768px) {
+    [class*="todo"] {
+        display: grid;
+        gap: 2rem;
+        grid-template-columns: repeat(2, 1fr);
+    }
+    [class*="note"] {
+        padding-right: 30%;
+    }
+    [class*="todo"] {
+        margin-top: 10%;
+    }
+}
+@media (max-width: 768px) {
+    [class*="title"] {
+        text-align: center;
+    }
+    
+}
+.content {
+    padding-top: 3rem;
+}
+.note {
+    padding-right: 18%;
+}
+
+.button {
+    background-color: #141414; 
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    cursor:pointer;
+  }
+
